@@ -19,9 +19,10 @@ trait BuildSettings {
     // will need to use both JDK 1.7 and Scala 2.12/JDK 1.8 to cross-build for Scala 2.12
     initialize := {
       val _ = initialize.value // run the previous initialization
-      val required = "1.7"
+      val required = Seq("1.7", "1.8")
       val current  = sys.props("java.specification.version")
-      assert(current == required || sys.env.contains("TRAVIS"), s"JDK $required is required for compatibility; current version = $current")
+
+      assert(required.contains(current) || sys.env.contains("TRAVIS"), s"JDK of either ${required(0)} is required for compatibility; current version = $current")
     },
 
     // basic project information
