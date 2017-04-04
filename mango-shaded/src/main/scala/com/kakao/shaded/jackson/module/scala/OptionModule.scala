@@ -1,7 +1,7 @@
 package com.kakao.shaded.jackson.module.scala
 
-import com.kakao.shaded.jackson.module.scala.deser.OptionDeserializerModule
-import com.kakao.shaded.jackson.module.scala.ser.OptionSerializerModule
+import deser.OptionDeserializerModule
+import ser.OptionSerializerModule
 
 /**
  * Adds support for serializing and deserializing Scala Options.

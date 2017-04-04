@@ -1,11 +1,13 @@
 package com.kakao.shaded.jackson.module.scala.ser
 
 import com.kakao.shaded.jackson.core.JsonGenerator
+
 import com.kakao.shaded.jackson.databind._
 import com.kakao.shaded.jackson.databind.ser.{ContextualSerializer, Serializers}
-import com.kakao.shaded.jackson.module.scala.JacksonModule
+
+import com.kakao.shaded.jackson.module.scala.{JsonScalaEnumeration, JacksonModule}
+
 import com.kakao.shaded.jackson.module.scala.util.Implicits._
-import com.kakao.shaded.jackson.module.scala.JsonScalaEnumeration
 
 trait ContextualEnumerationSerializer extends ContextualSerializer
 {

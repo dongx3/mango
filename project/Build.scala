@@ -12,7 +12,7 @@ trait BuildSettings {
   val crossScalaV = Seq("2.10.6", "2.11.8")
   val scalaV = crossScalaV.last
   val paradiseV = "2.1.0"
-  val jacksonV = "2.7.2"
+  val jacksonV = "2.8.7"
 
   val buildSettings: Seq[Def.Setting[_]] = Defaults.coreDefaultSettings ++ Seq(
     // require JDK 1.7 for development
@@ -119,7 +119,7 @@ trait BuildSettings {
 
   val config = dep("com.typesafe" % "config" % "1.2.1")
   val rx = dep("io.reactivex" %% "rxscala" % "0.26.5")
-  val slf4j = dep("org.slf4j" % "slf4j-api" % "1.7.21")
+  val slf4j = dep("org.slf4j" % "slf4j-api" % "1.7.22")
 
   val loggingProvided = slf4j ++ dep(
     // used by LoggingUtils; set as "provided", since Mango can be used in either logback- or log4j-based deployment environments

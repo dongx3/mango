@@ -1,7 +1,7 @@
 package com.kakao.shaded.jackson.module.scala
 
-import com.kakao.shaded.jackson.module.scala.deser.SeqDeserializerModule
-import com.kakao.shaded.jackson.module.scala.ser.IterableSerializerModule
+import deser.SeqDeserializerModule
+import ser.IterableSerializerModule
 
 /**
  * Adds support for serializing and deserializing Scala sequences.

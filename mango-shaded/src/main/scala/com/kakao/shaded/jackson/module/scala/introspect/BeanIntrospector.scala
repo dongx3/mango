@@ -26,7 +26,7 @@ package com.kakao.shaded.jackson.module.scala.introspect
 import java.lang.reflect.{Constructor, Field, Method, Modifier}
 
 import com.kakao.shaded.jackson.annotation.JsonProperty
-import com.kakao.shaded.paranamer.{BytecodeReadingParanamer, CachingParanamer}
+import com.kakao.shaded.jackson.module.paranamer.shaded.{BytecodeReadingParanamer, CachingParanamer}
 
 import scala.annotation.tailrec
 import scala.reflect.NameTransformer

@@ -5,7 +5,6 @@ import java.lang.reflect.ParameterizedType
 
 import com.kakao.shaded.jackson.databind.BeanProperty
 import com.kakao.shaded.jackson.module.scala.introspect.ScalaAnnotationIntrospector
-import com.kakao.shaded.jackson.module.scala.JsonScalaEnumeration
 
 object EnumResolver {
 

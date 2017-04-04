@@ -1,6 +1,6 @@
 package com.kakao.shaded.jackson.module.scala
 
-import com.kakao.shaded.jackson.module.scala.ser.IterableSerializerModule
+import ser.{IterableSerializerModule}
 
 /**
  * Adds support for serializing Scala Iterables.
